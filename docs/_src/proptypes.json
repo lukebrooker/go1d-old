@@ -177,7 +177,7 @@
       },
       "flex": {
         "defaultValue": {
-          "value": "'1 0 auto'",
+          "value": "'0 0 auto'",
           "computed": false
         },
         "required": false

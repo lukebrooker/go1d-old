@@ -45,7 +45,7 @@
     ],
     "links": [
       {
-        "rel": "stylesheet",  
+        "rel": "stylesheet",
         "href": "https://unpkg.com/minimal.css@1.0.1/minimal.css"
       },
       {
