@@ -1,0 +1,285 @@
+{
+  "src/components/Actions/index.js": {
+    "description": "",
+    "displayName": "Actions",
+    "methods": []
+  },
+  "src/components/Base/index.js": {
+    "description": "",
+    "displayName": "Base",
+    "methods": [],
+    "props": {
+      "css": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "object"
+            },
+            {
+              "name": "array"
+            }
+          ]
+        },
+        "required": false,
+        "description": "A css object or array of objects that's passed to emotion",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "element": {
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        },
+        "required": false
+      },
+      "children": {
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
+  "src/components/Button/index.js": {
+    "description": "",
+    "displayName": "Button",
+    "methods": [],
+    "props": {
+      "element": {
+        "defaultValue": {
+          "value": "'button'",
+          "computed": false
+        },
+        "required": false
+      },
+      "size": {
+        "defaultValue": {
+          "value": "'md'",
+          "computed": false
+        },
+        "required": false
+      },
+      "color": {
+        "defaultValue": {
+          "value": "'subtle'",
+          "computed": false
+        },
+        "required": false
+      },
+      "backgroundColor": {
+        "defaultValue": {
+          "value": "'lightest'",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
+  "src/components/ButtonFilled/index.js": {
+    "description": "",
+    "displayName": "ButtonFilled",
+    "methods": [],
+    "props": {
+      "element": {
+        "defaultValue": {
+          "value": "'button'",
+          "computed": false
+        },
+        "required": false
+      },
+      "color": {
+        "defaultValue": {
+          "value": "'background'",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
+  "src/components/ButtonMinimal/index.js": {
+    "description": "",
+    "displayName": "ButtonMinimal",
+    "methods": [],
+    "props": {
+      "element": {
+        "defaultValue": {
+          "value": "'button'",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
+  "src/components/DarkMode/index.js": {
+    "description": "",
+    "displayName": "DarkMode",
+    "methods": []
+  },
+  "src/components/Text/index.js": {
+    "description": "",
+    "displayName": "Text",
+    "methods": [],
+    "props": {
+      "element": {
+        "defaultValue": {
+          "value": "'span'",
+          "computed": false
+        },
+        "required": false
+      },
+      "fontSize": {
+        "defaultValue": {
+          "value": "2",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
+  "src/components/Theme/index.js": {
+    "description": "",
+    "displayName": "DarkMode",
+    "methods": []
+  },
+  "src/components/View/index.js": {
+    "description": "",
+    "displayName": "View",
+    "methods": [],
+    "props": {
+      "flexDirection": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Set the direction of flexbox for the view",
+        "defaultValue": {
+          "value": "'column'",
+          "computed": false
+        }
+      },
+      "element": {
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        },
+        "required": false
+      },
+      "display": {
+        "defaultValue": {
+          "value": "'flex'",
+          "computed": false
+        },
+        "required": false
+      },
+      "flex": {
+        "defaultValue": {
+          "value": "'1 0 auto'",
+          "computed": false
+        },
+        "required": false
+      },
+      "margin": {
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        },
+        "required": false
+      },
+      "marginX": {
+        "defaultValue": {
+          "value": "margin",
+          "computed": true
+        },
+        "required": false
+      },
+      "marginY": {
+        "defaultValue": {
+          "value": "margin",
+          "computed": true
+        },
+        "required": false
+      },
+      "marginTop": {
+        "defaultValue": {
+          "value": "marginY",
+          "computed": true
+        },
+        "required": false
+      },
+      "marginBottom": {
+        "defaultValue": {
+          "value": "marginY",
+          "computed": true
+        },
+        "required": false
+      },
+      "marginRight": {
+        "defaultValue": {
+          "value": "marginX",
+          "computed": true
+        },
+        "required": false
+      },
+      "marginLeft": {
+        "defaultValue": {
+          "value": "marginX",
+          "computed": true
+        },
+        "required": false
+      },
+      "paddingX": {
+        "defaultValue": {
+          "value": "padding",
+          "computed": true
+        },
+        "required": false
+      },
+      "paddingY": {
+        "defaultValue": {
+          "value": "padding",
+          "computed": true
+        },
+        "required": false
+      },
+      "paddingTop": {
+        "defaultValue": {
+          "value": "paddingY",
+          "computed": true
+        },
+        "required": false
+      },
+      "paddingBottom": {
+        "defaultValue": {
+          "value": "paddingY",
+          "computed": true
+        },
+        "required": false
+      },
+      "paddingRight": {
+        "defaultValue": {
+          "value": "paddingX",
+          "computed": true
+        },
+        "required": false
+      },
+      "paddingLeft": {
+        "defaultValue": {
+          "value": "paddingX",
+          "computed": true
+        },
+        "required": false
+      },
+      "css": {
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  }
+}

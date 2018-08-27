@@ -1,0 +1,57 @@
+{
+  "name": "go1d",
+  "version": "1.0.0",
+  "description": "GO1 Design System",
+  "main": "src/index.js",
+  "repository": "https://github.com/lukebrooker/go1d",
+  "author": "Luke Brooker <mail@lukebrooker.com> (https://lukebrooker.com/)",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "generate-proptypes": "react-docgen src/components -i ThemeContext -o ./docs/_src/proptypes.json --pretty",
+    "docs:build": "yarn generate-proptypes && x0 build docs",
+    "docs:dev": "yarn generate-proptypes && x0 docs",
+    "format": "standard --fix",
+    "lint": "standard --verbose | snazzy",
+    "size": "bundlesize",
+    "test": "yarn lint"
+  },
+  "dependencies": {
+    "color": "^3.0.0",
+    "emotion": "^9.2.4",
+    "emotion-theming": "^9.2.5",
+    "minimal.css": "^1.0.1",
+    "react": "^16.4.1",
+    "recompose": "^0.27.1"
+  },
+  "devDependencies": {
+    "@compositor/kit": "^1.0.43",
+    "@compositor/kit-snapshot": "^1.0.24",
+    "@compositor/x0": "^6.0.0-4",
+    "bundlesize": "^0.17.0",
+    "react-docgen": "^2.21.0",
+    "react-emotion": "^9.2.4",
+    "react-router-dom": "^4.3.1",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  },
+  "x0": {
+    "title": "GO1D - GO1 Design System",
+    "meta": [
+      {
+        "name": "twitter:card",
+        "content": "GO1 Design System"
+      }
+    ],
+    "links": [
+      {
+        "rel": "stylesheet",  
+        "href": "https://unpkg.com/minimal.css@1.0.1/minimal.css"
+      },
+      {
+        "rel": "stylesheet",
+        "href": "https://fonts.googleapis.com/css?family=Muli:400,600"
+      }
+    ]
+  }
+}
