@@ -11,6 +11,7 @@
     "generate-proptypes": "react-docgen src/components -i ThemeContext -o ./docs/_src/proptypes.json --pretty",
     "docs:build": "yarn generate-proptypes && x0 build docs",
     "docs:dev": "yarn generate-proptypes && x0 docs",
+    "deploy": "yarn docs:build && gh-pages -d dist",
     "format": "standard --fix",
     "lint": "standard --verbose | snazzy",
     "size": "bundlesize",
@@ -29,6 +30,7 @@
     "@compositor/kit-snapshot": "^1.0.24",
     "@compositor/x0": "^6.0.0-4",
     "bundlesize": "^0.17.0",
+    "gh-pages": "^1.2.0",
     "react-docgen": "^2.21.0",
     "react-emotion": "^9.2.4",
     "react-router-dom": "^4.3.1",
@@ -37,6 +39,7 @@
   },
   "x0": {
     "title": "GO1D - GO1 Design System",
+    "basename": "/go1d",
     "meta": [
       {
         "name": "twitter:card",
