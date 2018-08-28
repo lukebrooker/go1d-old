@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import isUndefined from 'lodash/isUndefined'
+import { opacify } from '../../foundations'
 import Base from '../Base'
 import Theme from '../Theme'
 
@@ -46,6 +47,7 @@ const View = ({
   paddingLeft = paddingX,
   color,
   backgroundColor,
+  backgroundOpacity,
   borderRadius,
   width,
   maxWidth,
@@ -54,7 +56,7 @@ const View = ({
   ...props
 }) => (
   <Theme.Consumer>
-    {({ spacing: s, colors, transitions }) => (
+    {({ spacing: s, colors, transitions, opacity }) => (
       <Base
         element={element}
         css={[
@@ -81,7 +83,9 @@ const View = ({
             minHeight: 0,
             minWidth: 0,
             color: colors[color],
-            backgroundColor: colors[backgroundColor],
+            backgroundColor: opacity[backgroundOpacity]
+              ? opacify(colors[backgroundColor], opacity[backgroundOpacity])
+              : colors[backgroundColor],
             borderRadius: s[borderRadius],
             transition: transitions.subtle
           },

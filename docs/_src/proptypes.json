@@ -119,6 +119,20 @@
     "displayName": "DarkMode",
     "methods": []
   },
+  "src/components/Pill/index.js": {
+    "description": "",
+    "displayName": "Pill",
+    "methods": [],
+    "props": {
+      "color": {
+        "defaultValue": {
+          "value": "'faded'",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
   "src/components/Text/index.js": {
     "description": "",
     "displayName": "Text",

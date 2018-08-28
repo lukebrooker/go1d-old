@@ -22,16 +22,6 @@ export const getContrastColor = (color) =>
 
 const brandAccent = '#31B8DA'
 
-// export const brandGreys = {
-//   darkest: '#121F22',
-//   darker: '#333e41',
-//   dark: '#586164',
-//   grey: '#7f8688',
-//   light: '#a7adae',
-//   lighter: '#d3d5d6',
-//   lightest: '#ffffff'
-// }
-
 export const brandGreys = {
   darkest: '#121F22',
   darker: '#36464B',
@@ -41,8 +31,6 @@ export const brandGreys = {
   lighter: '#F1F6F9',
   lightest: '#ffffff'
 }
-
-// #043341 #32515d #59717b #81929b #a9b5bb #d3dadc #ffffff
 
 export const themedGreys = {
   lightMode: {
@@ -76,6 +64,12 @@ const brandStatuses = {
   yellow: '#FFDE00',
   orange: '#F6941D',
   red: '#DA3131'
+}
+
+export const opacity = {
+  feedback: 0.1,
+  pill: 0.3,
+  disabled: 0.5
 }
 
 export const gradients = {
@@ -121,7 +115,7 @@ export const shadows = {
 
 const defaultFontFamily =
   "-apple-system,BlinkMacSystemFont,helvetica,'helvetica neue',ubuntu,roboto,noto,'segoe ui',arial,sans-serif"
-const sansSerif = "'Muli', " + defaultFontFamily
+const sansSerif = "'Open Sans', " + defaultFontFamily
 const monospace = "'Source Code Pro', 'Menlo', monospace"
 
 export const type = {
@@ -201,6 +195,7 @@ export const generateTheme = ({
   shadows,
   transitions,
   breakpoints,
+  opacity,
   ...theme
 })
 
