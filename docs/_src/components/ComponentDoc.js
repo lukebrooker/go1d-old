@@ -25,23 +25,24 @@ export const ComponentDoc = ({ component = '' }) => {
   const {
     props = {}
   } = getDocs(component)
-  console.log(props)
   return (
     <View>
       <View marginY={3}>
         <Text element='h3' fontSize={3} fontWeight='bold'>Props & methods</Text>
       </View>
       <Base element='table' display='table'>
-        <Base element='tr'>
-          <Base element='th'>Name</Base>
-          <Base element='th'>Type</Base>
-          <Base element='th'>Required</Base>
-          <Base element='th'>Default</Base>
-          <Base element='th'>Description</Base>
+        <Base element='tbody'>
+          <Base element='tr'>
+            <Base element='th'>Name</Base>
+            <Base element='th'>Type</Base>
+            <Base element='th'>Required</Base>
+            <Base element='th'>Default</Base>
+            <Base element='th'>Description</Base>
+          </Base>
+          {Object.keys(props).map((key) => (
+            <Prop key={key} name={key} {...props[key]} />
+          ))}
         </Base>
-        {Object.keys(props).map((key) => (
-          <Prop key={key} name={key} {...props[key]} />
-        ))}
       </Base>
     </View>
   )
