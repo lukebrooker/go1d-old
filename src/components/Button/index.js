@@ -31,6 +31,7 @@ const Button = ({
         borderRadius={1}
         css={[
           {
+            cursor: 'pointer',
             '&:disabled': {
               opacity: 0.5,
               pointerEvents: 'none'

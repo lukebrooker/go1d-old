@@ -1,5 +1,9 @@
 import React from 'react'
 
-const Actions = () => <div>Action!</div>
+const Actions = ({
+  children
+}) => (
+  <div>{children}</div>
+)
 
 export default Actions
